@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lin Detective</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./devdetective-images/favicon-16x16.png">
+</head>
+<body >
+    <div class="wrapper">
+        <div class="container">
+
+            <!-- heading and toggle button -->
+        <div data-heading_and_toggle_button>
+            <h1>Detective</h1>
+            <button class="active btns" data-sun_icon> <p>LIGHT</p> 
+                <img src="./devdetective-images/images/sun-icon.svg" alt="">
+            </button>
+            <button data-moon_icon class="btns"> <p>DARK</p> 
+                <img src="./devdetective-images/images/moon-icon.svg" alt="">
+            </button>
+        </div>
+        <!-- search and input field -->
+        <div data-search_input_cont>
+            <div class="div1">
+                <img src="./devdetective-images/images/search-icon.svg" width="20px" height="20px" alt="">
+                <input data-input_field type="text" placeholder="Enter a GitHub username..." >
+            </div>
+            <div data-noresult_found>Oops! no match found</div>
+            <button data-search_btn>Search</button>
+        </div>
+        <!-- display user info -->
+        <div data-display_user_info_cont>
+            <!-- left half -->
+            <div class="left">
+                <!-- user pic -->
+                <img data-user-image>
+            </div>
+            <!-- name and date git -->
+            <div class="div2">
+                <!-- name and link -->
+                <div>
+                    <h1 data-username></h1>
+                    <a data-githublink></a>
+                    
+                </div>
+                <!-- date -->
+                <p data-date_joined></p>
+            </div>
+             <!-- info container -->
+             <div class="div3">
+                <p data-description></p>
+                <!-- repo follower following -->
+                <div data-repo_follow_cont class="repo_follow_cont">
+                    <!-- repo -->
+                    <div data-div_1>
+                        <p>Repos</p>
+                        <h2 data-repos></h2>
+                    </div>
+                    <!-- Followers -->
+                    <div data-div_2>
+                        <p>Followers</p>
+                        <h2 data-followers></h2>
+                    </div>
+                    <!-- Following -->
+                    <div data-div_3>
+                        <p>Following</p>
+                        <h2 data-following></h2>
+                    </div>
+                </div>
+                <!-- locatin twitter container -->
+                <div data-last_div_cont class="lastdiv_container">
+                    <!-- location info -->
+                    <div class="common_div">
+                        <img src="./devdetective-images/images/location-icon.svg" alt="">
+                        <p data-location></p>
+                    </div>
+                    <!-- bio link -->
+                    <div class="common_div">
+                        <img src="./devdetective-images/images/website-icon.svg" alt="">
+                        <a data-blog></a>
+                    </div>
+                    <!-- twitter link -->
+                    <div class="common_div">
+                        <img src="./devdetective-images/images/twitter-icon.svg" alt="">
+                        <a data-twitter></a>
+                    </div>
+                    <!--company link  -->
+                    <div class="common_div">
+                        <img src="./devdetective-images/images/company-icon.svg" alt="">
+                        <p data-company></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
